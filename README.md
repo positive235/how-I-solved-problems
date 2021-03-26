@@ -2,10 +2,11 @@
 
 ## Contents
 
-1. [Create React App does NOT working](#1-create-react-app-does-not-working)
+1. [Create React App does NOT work](#1-create-react-app-does-not-work)
 2. [GitHub Markdown Same Page Link](#2-github-markdown-same-page-link)
+3. [virtualenv](#3-viutualenv)
   
-## 1. Create React App does NOT working
+## 1. Create React App does NOT work
 
 ### Feb 28, 2021
 
@@ -51,3 +52,22 @@ Place one has the fun times of linking here, but I can also link back [here](#pl
   - Spaces between letters will be converted to `-`
 
 - Reference(https://stackoverflow.com/questions/27981247/github-markdown-same-page-link)
+
+## 3. virtualenv 
+
+### Mar 26, 2021
+ 
+### Problem: Error “virtualenv : command not found” but install location is in PYTHONPATH
+
+ I installed virtualenv on my Macbook using pip install virtualenv. But when I try to create a new virtualenv using virtualenv venv, I get the error saying "virtualenv : command not found".
+ 
+- **Solved the problem by `python -m virtualenv venv`**
+
+1. `python -m virtualenv venv`
+2. `source venv/bin/activate`
+
+- Reference
+  - https://stackoverflow.com/questions/39964635/error-virtualenv-command-not-found-but-install-location-is-in-pythonpath/39977369
+  - https://docs.python-guide.org/dev/virtualenvs/   
+
+
