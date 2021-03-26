@@ -4,7 +4,7 @@
 
 1. [Create React App does NOT work](#1-create-react-app-does-not-work)
 2. [GitHub Markdown Same Page Link](#2-github-markdown-same-page-link)
-3. [virtualenv](#3-viutualenv)
+3. [virtualenv](#3-virtualenv)
   
 ## 1. Create React App does NOT work
 
