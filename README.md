@@ -4,7 +4,7 @@
 
 1. [Create React App does NOT work](#1-create-react-app-does-not-work)
 2. [GitHub Markdown Same Page Link](#2-github-markdown-same-page-link)
-3. [virtualenv](#3-virtualenv)
+3. [virtualenv and django installation](#3-virtualenv-and-django-installation)
   
 ## 1. Create React App does NOT work
 
@@ -53,15 +53,15 @@ Place one has the fun times of linking here, but I can also link back [here](#pl
 
 - Reference(https://stackoverflow.com/questions/27981247/github-markdown-same-page-link)
 
-## 3. virtualenv 
+## 3. virtualenv and django installation
 
 ### Mar 26, 2021
  
 ### Problem: Error “virtualenv : command not found” but install location is in PYTHONPATH
 
- I installed virtualenv on my Macbook using pip install virtualenv. But when I try to create a new virtualenv using virtualenv venv, I get the error saying "virtualenv : command not found".
- 
-- **Solved the problem by `python -m virtualenv venv`**
+ I installed virtualenv on my Macbook using `pip install virtualenv`. But when I try to create a new virtualenv using virtualenv venv, I get the error saying "virtualenv : command not found".
+
+- Try 1: `python -m virtualenv venv` ----> this virtual env couldn't install django@3.1.7...
 
 1. `python -m virtualenv venv`
 2. `source venv/bin/activate`
@@ -70,4 +70,20 @@ Place one has the fun times of linking here, but I can also link back [here](#pl
   - https://stackoverflow.com/questions/39964635/error-virtualenv-command-not-found-but-install-location-is-in-pythonpath/39977369
   - https://docs.python-guide.org/dev/virtualenvs/   
 
+- **Solved the problem by `python3 -m venv environment_name`**  ---> This virtual env could install django@3.1.7 (By `pip install django==3.1.7`)
+
+1. `python3 -m venv environment_name`
+2. `source environment_name/bin/activate`
+
+```
+Instead of using brew you can simply use "venv".
+
+To create a virtual environment you can run --> python3 -m venv environment_name
+
+**Activation of Virtual Environment : source environment_name/bin/activate
+
+**Deactivation : deactivate
+```
+
+(Reference: https://stackoverflow.com/questions/55482197/how-to-correctly-install-python3-and-virtualenv-on-macos-mojave)
 
