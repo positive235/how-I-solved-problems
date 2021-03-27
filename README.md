@@ -4,7 +4,7 @@
 
 1. [Create React App does NOT work](#1-create-react-app-does-not-work)
 2. [GitHub Markdown Same Page Link](#2-github-markdown-same-page-link)
-3. [virtualenv and django installation](#3-virtualenv-and-django-installation)
+3. [virtualenv and django installation on Mac](#3-virtualenv-and-django-installation-on-mac)
   
 ## 1. Create React App does NOT work
 
@@ -53,7 +53,7 @@ Place one has the fun times of linking here, but I can also link back [here](#pl
 
 - Reference(https://stackoverflow.com/questions/27981247/github-markdown-same-page-link)
 
-## 3. virtualenv and django installation
+## 3. virtualenv and django installation on Mac
 
 ### Mar 26, 2021
  
