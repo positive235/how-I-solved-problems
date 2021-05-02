@@ -5,6 +5,7 @@
 1. [Create React App does NOT work](#1-create-react-app-does-not-work)
 2. [GitHub Markdown Same Page Link](#2-github-markdown-same-page-link)
 3. [virtualenv and django installation on Mac](#3-virtualenv-and-django-installation-on-mac)
+4. [How to deploy react app to Github pages](#4-how-to-deploy-react-app-to-github-pages)
   
 ## 1. Create React App does NOT work
 
@@ -87,3 +88,36 @@ To create a virtual environment you can run --> python3 -m venv environment_name
 
 (Reference: https://stackoverflow.com/questions/55482197/how-to-correctly-install-python3-and-virtualenv-on-macos-mojave)
 
+## 4. How to deploy react app to Github pages
+
+### May 2, 2021
+
+- Reference 1: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+- Reference 2: https://create-react-app.dev/docs/deployment/#github-pages
+
+1. 
+```
+cd my-app
+npm install gh-pages --save-dev
+```
+2. Add properties to `package.json` file. 
+   The first property: `"homepage": "https://{username}.github.io/{repo-name}"`
+   In the "scripts" property, add `"predeploy": "npm run build`, `"deploy": "gh-pages -d build"`
+   
+   For example,
+```
+{
+  "homepage": "https://{username}.github.io/{repo-name}",
+  "name":...
+  "version": ...
+  "private": ...
+  "dependencies":...
+  "scripts": {
+    //...
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+}
+  
+```
+
+3. `npm run deploy`
