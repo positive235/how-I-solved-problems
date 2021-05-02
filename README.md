@@ -97,7 +97,7 @@ To create a virtual environment you can run --> python3 -m venv environment_name
 
 1. 
 ```
-cd my-app
+cd my-react-app-folder-name
 npm install gh-pages --save-dev
 ```
 2. Add properties to `package.json` file. 
