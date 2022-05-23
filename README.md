@@ -26,6 +26,21 @@
 - **Solved the problem by `npx create-react-app@latest your-project-name --use-npm`**
   - Reference(https://stackoverflow.com/questions/64963796/create-react-app-is-not-working-since-version-4-0-1) 
 
+### May 23, 2022
+
+- Problem: npx create-react-app@latest your-project-name --use-npm did not work to create react app. So, after yarn installation, the message "yarnpkg add --exact react react-dom react-scripts cra-template --cwd my-app has failed." was shown and I could not create react app.
+
+- **Solved the problem by** 
+```
+npm install -g npm@latest
+npm install node
+npm install -g yarn
+yarn cache clean
+npx create-react-app my-app
+```
+  - Reference(https://stackoverflow.com/questions/64330949/unable-to-create-react-abort-installation-yarnpkg-add-exact-react-react-dom-r)
+  - **Now I can generate react app only with the command `npx create-react-app my-app`!**
+
 ## 2. GitHub Markdown Same Page Link
 
 ### Feb 28, 2021
